@@ -1,5 +1,5 @@
 <h3>Peruse</h3>
-<h4>Learn to Code. Code by Doing.</h4>
+<h4>Learn to Code. Code to learn.</h4>
 
 This is a cool project that I worked on over the course of a month and a half to help me build my first webapp.
 It's a bit confusing but I started learning to code by building this app that finds lessons that teach  you how to code.
