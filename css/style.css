@@ -1,0 +1,507 @@
+/** Import Reset CSS **/
+
+@import url("reset.css");
+
+/** Global Styles **/
+html
+{
+	height: 100%;
+	overflow: auto;
+	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+
+	scrollbar-base-color: #444;
+	scrollbar-base-width: 0.8rem;
+	scrollbar-track-color: #222;
+	scrollbar-track-width: 0.8rem;
+	scrollbar-arrow-color: #444;
+	
+}
+::-webkit-scrollbar {
+		width: 0.8rem;
+		background-color: #222;
+	}
+::-webkit-scrollbar-thumb {
+		width: 0.8rem;
+		background-color: #555;
+
+		-webkit-transition: all 0.2s linear;
+		-moz-transition: all 0.2s linear;
+		-o-transition: all 0.2s linear;
+		transition: all 0.2s linear;
+	}
+::-webkit-scrollbar-thumb:hover {
+		width: 0.8rem;
+		background-color: #777;
+	}
+::-webkit-scrollbar-corner
+{
+	background-color: #222;
+}
+body
+{
+	font-family: "Source Sans Pro", Arial, Verdana, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #DDD;
+	padding: 0 0 25px 0;
+	background: #222 url("../images/bg.png") repeat;
+}
+
+::selection { background: #F33; color: #FFF; }
+::-moz-selection { background: #F33; color: #FFF; }
+
+a { color: #999; text-decoration: none; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+a:hover { color: #FFF; }
+
+/** Layout Styles **/
+
+#fixedmain
+{
+	position: fixed;
+	width: 40rem;
+	min-width: 240px;
+	height: 100%;
+	top: 0;
+	background: #222 url("../images/bg.png") repeat;
+	color: #444;
+	z-index: 10;
+	overflow: auto;
+	
+	/*text-shadow: 1px 1px 1px #FFF;*/
+	
+	-moz-box-shadow: 0 0 10px #000;
+	-webkit-box-shadow: 0 0 10px #000;
+	box-shadow: 0px 0px 10px #000;
+}
+
+	#fixedmain #headercont
+	{
+		width: 100%;
+		max-width: 980px;
+		margin: 0 auto 0 auto;
+	}
+	
+		#fixedmain #headercont #headerleft
+		{
+			float: left;
+			width: 100%;
+		}
+		
+			#fixedmain #headercont #headerleft a img
+			{
+				width: 50px;
+				margin: 15px 0 0 0;
+
+				-webkit-transition: all 0.2s linear;
+				-moz-transition: all 0.2s linear;
+				-o-transition: all 0.2s linear;
+				transition: all 0.2s linear;
+			}
+			
+			#fixedmain #headercont #headerleft a:hover img
+			{
+				opacity: 0.6;
+			}
+
+			#fixedmain #headercont #headerleft .main_icon
+			{
+				float: left;
+				width: 4rem;
+				height: 4rem;
+				margin: 5px;
+				z-index: 50;
+			}
+
+			#fixedmain #headercont #search_bar
+			{
+				float: left;
+				background-color: transparent;
+				width: 100%;
+				height: 7rem;
+				margin: auto;
+			}
+
+			#fixedmain #headercont #search_bar_input
+			{
+				float: left;
+				width: 33rem;
+				height: 7rem;
+				border: none;
+				outline: none;
+				background-color: transparent;
+				padding: 0;
+				margin: 0 3.5rem;
+				color: #FFF;
+				font-size: 2.5rem;
+				font-weight: normal;
+				font-family: Helvetica, sans-serif;
+			}
+		#fixedmain #headercont #headerright
+		{
+			float: left;
+			width: 100%;
+
+		}
+		#fixedmain #headercont #headerright h1
+		{
+			font-size: 2rem;
+			font-family: Helvetica, sans-serif;
+			line-height: 2.5rem;
+			font-weight: 700;
+			padding: 2rem 3.5rem;
+			color: #555; text-decoration: none; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear;
+		}
+		#fixedmain #headercont #headerright h1:hover
+		{
+			color: #FFF;
+		}
+		#fixedmain #headercont #headerright h1 img 
+		{
+			width: 16px;
+			height: 16px;
+		}
+		#fixedmain #headercont #headerright #topic_header
+		{
+			margin: 0 0rem;
+			color: #FFF;
+			font-size: 2.1rem;
+
+			font-weight: bolder;
+			font-family: Helvetica, sans-serif;
+		}
+		#fixedmain #headercont #headerright #title
+		{
+			background-color: #222;
+		}
+		#fixedmain #headercont #headerright hr
+		{
+			border: 0;
+			border-bottom: 1px solid;
+			color: #333;
+			background-color: #333;
+			margin: 0;
+		}
+			
+				#fixedmain #headercont #headerright ul
+				{
+					float: left;
+					margin: 80px 0 0 0px;
+				}
+			
+					#fixedmain #headercont #headerright ul li
+					{
+						display: inline;
+					}
+					
+						#fixedmain #headercont #headerright ul li a
+						{
+							float: left;
+							line-height: 40px;
+							padding: 0 4px;
+							font-weight: 400;
+							font-size: 16px;
+							text-decoration: none;
+							color: #333;
+							text-transform: uppercase;
+							
+						}
+						
+							#fixedmain #headercont #headerright ul li a:hover, #fixedtop #headercont #headerright ul li.active a
+							{
+								color: #F33;
+							}
+
+/**#maincont
+{
+	float: left;
+	margin-left: 40rem;
+	width: 68.5%;
+	min-width: 40rem;
+	text-shadow: 1px 1px 1px #000;
+}
+
+	#maincont #main
+	{
+		width: 90%;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 25px 0 0 0;
+		line-height: 22px;
+	}
+	#maincont #main #display
+	{
+		width: 50%;
+		height: 100%;
+	}
+**/
+#maincont 
+{
+	float: left;
+	width: 68.5%;
+	min-width: 240px;
+	margin-left: 40rem;
+}
+
+	#maincont #main
+	{
+		width: 100%;
+		height: 100%;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 0;
+		line-height: 22px;
+		overflow: auto;
+	}
+	#maincont #main #display
+	{
+		width: 100%;
+		height: 100%;
+	}
+	**/
+		#maincont #main p { margin: 0 0 20px 0; }
+		#maincont #main h1, #maincont #main h2, #maincont #main h3, #maincont #main h4, #maincont #main h5 { margin: 0 0 20px 0; color: #FFF; font-weight: normal; font-family: "Archivo Narrow", Arial, Helvetica, sans-serif; }
+		#maincont #main h1 { font-size: 30px; line-height: 30px; }
+		#maincont #main h2 { font-size: 28px; line-height: 28px; }
+		#maincont #main h3 { font-size: 26px; line-height: 26px; }
+		#maincont #main h4 { font-size: 24px; line-height: 24px; }
+		#maincont #main h5 { font-size: 22px; line-height: 22px; }
+		#maincont #main ul { margin: 0 0 15px 35px; list-style-type: square; }
+		#maincont #main ul li { padding: 0 0 0 2px; }
+		#maincont #main ol { margin: 0 0 15px 35px; list-style-type: decimal; }
+		#maincont #main ol li { padding: 0 0 0 2px; }
+		#maincont #main hr { clear: both; border: 0; height: 0; margin: 0 0 20px 0; border-top: 1px solid #000; border-bottom: 1px solid #222; }
+		#maincont #main blockquote { background: #151515; border-left: 3px solid #E2761C; padding: 15px; margin: 0 0 15px 0; }
+
+		/** Portfolio Styles **/
+
+		#maincont #main #portfoliocont ul
+		{
+			list-style-type: none;
+			margin: 0 0 20px 0;
+		}
+		
+			#maincont #main #portfoliocont ul li
+			{
+				display: block;
+				margin: 0 0 10px 0;
+			}
+			
+				#maincont #main #portfoliocont ul li a
+				{
+					position: relative;
+					float: left;
+					width: 23%;
+					margin: 0 1% 10px 1%;
+				}
+				
+					#maincont #main #portfoliocont ul li a img
+					{
+						width: 100%;
+						height: auto;
+						display: block;
+					}
+
+						#maincont #main #portfoliocont a .overlay
+						{
+							position: absolute;
+							height: 100%;
+							left: 0;
+							opacity: 0;
+							top: 0;
+							width: 100%;
+							z-index: 40;
+							
+							-webkit-transition: all 0.1s linear;
+							-moz-transition: all 0.1s linear;
+							-o-transition: all 0.1s linear;
+							transition: all 0.1s linear;
+						}
+						
+							#maincont #main #portfoliocont a .overlay.link
+							{
+								background: url("../images/overlay_link.png") no-repeat scroll center center, url("../images/overlay_bg.png") repeat scroll center center transparent;
+								display: inline-block;
+							}
+							
+								#maincont #main #portfoliocont a .overlay:hover
+								{
+									opacity: 1;
+								}
+								
+	/** Footer **/
+	/**		
+	#maincont #footercont
+	{
+		width: 80%;
+		max-width: 980px;
+		margin: 0 auto;
+		color: #777;
+		line-height: 22px;
+		font-size: 12px;
+		text-align: left;
+		text-shadow: 1px 1px 1px #000;
+	}
+	**/
+
+/** Responsive Magic **/
+
+@media screen and (max-width: 1024px)
+{
+	
+	#fixedmain #headercont
+	{
+		text-align: left;
+	}
+	
+		#fixedmain #headercont #headerleft
+		{
+			float: left;
+			width: 100%;
+
+		}
+		
+			#fixedmain #headercont #headerleft a img
+			{
+				float: left;
+				width: 100px;
+				margin: 15px 0 10px 0;
+			}
+		
+		#fixedmain #headercont #headerright
+		{
+			float: left;
+			width: 100%;
+		}
+	#maincont
+	{
+		float: left;
+		width: 59.4%;
+
+	}
+	#maincont #main
+	{
+		width: 93%;
+
+	}
+	
+	#maincont #main #portfoliocont ul li a
+	{
+		width: 31.3%;
+		margin-bottom: 10px;
+	}
+	
+	#maincont #footercont
+	{
+		text-align: center;
+	}
+
+}
+@media screen and (max-width: 768px)
+{
+	
+	#fixedmain #headercont
+	{
+		text-align: left;
+	}
+	
+		#fixedmain #headercont #headerleft
+		{
+			float: left;
+			width: 100%;
+
+		}
+		
+			#fixedmain #headercont #headerleft a img
+			{
+				float: left;
+				width: 100px;
+				margin: 15px 0 10px 0;
+			}
+		
+		#fixedmain #headercont #headerright
+		{
+			float: left;
+			width: 100%;
+		}
+	#maincont
+	{
+		float: left;
+		width: 44.6%;
+		min-width: 15rem;
+
+	}
+	#maincont #main
+	{
+		float: left;
+		margin: 0 3%;
+		width: 100%;
+
+	}
+	
+	#maincont #main #portfoliocont ul li a
+	{
+		width: 48%;
+		margin-bottom: 10px;
+	}
+	
+	#maincont #footercont
+	{
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 480px)
+{
+	#maincont
+	{
+		display: none;
+	}
+	#fixedmain
+	{
+		width: 100%;
+	}
+			
+	#fixedmain #headercont
+	{
+		text-align: left;
+	}
+
+	#fixedmain #headercont #headerright h1
+	{
+		padding: 1.5rem 3.5rem;
+	}
+	#maincont #main #portfoliocont ul li a
+	{
+		width: 48%;
+		margin-bottom: 6px;
+	}
+	
+	#maincont #footercont
+	{
+		text-align: center;
+	}
+	
+}
+@media screen and (max-width: 320px)
+{
+	#fixedmain #headercont #search_bar_input
+			{
+				width: 28rem;
+				font-size: 1.9rem;
+				margin:0 1.5rem;
+			}
+	#fixedmain #headercont #headerright h1
+	{
+		padding: 1.5rem 2rem;
+		font-weight: normal;
+	}
+	#fixedmain #headercont #headerright #search_query
+	{
+
+	}
+	
+}
+
