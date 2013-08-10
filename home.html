@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Peruse|</title>
+        <meta charset="UTF-8">
+        
+        <!--[if IE]><![endif]-->
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <!--Load in Styles-->
+        <link media="screen" rel="stylesheet" href="css/style_v1.css">
+        <link media="screen" rel="stylesheet" href="css/jquery.sidr.dark.css">
+
+       <!-- Load in Scripts -->
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.9.0.min.js"><\/script>')</script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <!--Load in search script-->
+        <script type="text/javascript" src="js/peruse-script.js"></script>
+        <!--Load in hidden nav script-->
+        <script type="text/javascript" src="js/jquery.sidr.min.js"></script>
+        <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    </head>
+
+    <body lang="en">
+            <div id="fixedmain" class="clearfix">
+            	<div id="search_bar" class="clearfix">           
+                            
+                            <a href=""><h1 id="logo">P|</h1></a>
+                            
+                            <input type="text" id="text" maxlength="45" placeholder="What would you like to learn?" autofocus x-webkit-speech onwebkitspeechchange=doSearch(); />   
+                            
+                            <!--<a href="javascript:goBack()" id="back"><h1><</h1></a>
+                            
+                            <a href="javascript:goForward()" id="forward"><h1>></h1></a>
+                            
+                            <a href="javascript:refreshFrame()" id="refresh"><h1>%</h1></a>
+                            
+                            <a href="" id="favorite"><h1>*</h1></a>
+                            
+                            <a href="" id="download"><h1>#</h1></a>
+                            
+                            <a href="" id="profile"><h1>@</h1></a>-->
+                    </div>
+                
+
+                <div id="headercont" class="clearfix">
+                	
+                    <div id="headerleft">
+                    	
+                        
+                        
+                        
+                    </div>
+                	<div id="headerright">
+                            <div id='results-holder'>
+                                <a href=""><div id="title"></div></a>
+                                <ul id='results-list'></ul>
+                                <hr>
+                            </div>
+                            <!--<div id="blogs">
+                                <a href=""><div id="title"><h1 id="topic_header">Web Coding</h1></div></a>
+                                
+                            </div>-->
+                    </div>
+                </div>
+            
+
+                <div id="maincont" class="clearfix">
+                    
+                    <div id="main">
+
+                        <iframe id="display" frameborder="0" src="browse.html" sandbox="" seamless></iframe>
+                    </div>
+                </div>
+
+                
+            </div>
+    </body>
+</html>
